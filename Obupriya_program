@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s= new Scanner(System.in);
+		String str = s.next();
+		int a = (str.length()/2) +1 ;
+		String b = str.substring(a-1);
+		String c = str.substring(0, a-1);
+		String res  = b+c;
+		int l = res.length();
+		for(int i=1;i<=l;i++){
+			for(int j=2;j<=l+1-i;j++){
+				System.out.print("*");
+			}
+			for(int k=0;k<=i-1;k++){
+				System.out.print(res.charAt(k));
+			}
+			System.out.println();
+		}
+	}
+
+}
