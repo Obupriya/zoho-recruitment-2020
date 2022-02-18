@@ -13,7 +13,7 @@ public class Program {
 		int l = res.length();
 		for(int i=1;i<=l;i++){
 			for(int j=2;j<=l+1-i;j++){
-				System.out.print("*");
+				System.out.print(" ");
 			}
 			for(int k=0;k<=i-1;k++){
 				System.out.print(res.charAt(k));
